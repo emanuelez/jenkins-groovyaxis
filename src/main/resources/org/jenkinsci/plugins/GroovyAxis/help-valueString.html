@@ -1,0 +1,21 @@
+<div>
+    <p>
+    A Groovy script that will output an list of strings.
+    Each of those string will become a value in the axis.
+    </p>
+
+    <p>
+    Example:
+    <pre>
+def dir = new File('/')
+def result = []
+dir.eachFile {
+    if (it.isFile()) {
+        result += it.canonicalPath
+    }
+}
+
+return result
+    </pre>
+    </p>
+</div>
